@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+    <title>Job recruitment</title>
+</head>
+<script>
+    function openLoginBtn(){
+        document.querySelector('.bg-login').style.display='flex';
+       
+    }
+    function closeLoginBtn(){
+        document.querySelector('.bg-login').style.display='none';
+      
+    }
+
+</script>
+<body>
+    <header>
+        <img src="img/Job icon.png" class="logo" alt="Logo" style="width: 200px; height: auto;">
+    <nav>
+
+    <ul class="nav-link">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href=""> Browse</a></li>
+        <li><a href=""> Post Job</a></li>
+        <li><a href=""> About</a></li>
+    </ul>
+    </nav>
+    <button type="button" onclick="openLoginBtn()" >Login</button>
+    </header>
+    <div class="bg-login">
+        <div class="bg-login-content">
+              <div class="close" onclick="closeLoginBtn()">
+                  +
+              </div>
+              <i class="fa fa-user" style="font-size: 70px;"></i>
+              <form action="">
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password">
+ 
+              </form>
+              <button>Login</button>
+              <a href="resgister.html"><button type="button">Register</button></a>
+        </div>
+    </div>
+    <div class="search-bar">
+        <h3 style="margin-bottom: 50px;color: #edf0f1;">Find type of job you're looking for</h3>
+        <div class="input-icons">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="search" class="s-bar" placeholder="search here">
+        <button>Search</button>
+    </div>
+    </div>
+
+    <div style="align-items: center;">
+        <h3 style="margin-top: 50px;color: #edf0f1; margin-left: 48%;">Trending</h3>
+        <div class="container">
+            <div class="box">
+                <div class="icon1"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                <div class="content"> <h3>Web development</h3></div>
+            </div>
+            <div class="box">
+                <div class="icon1"><i class="fa fa-code" aria-hidden="true"></i></div>
+                <div class="content"> <h3>Programming</h3></div>
+            </div>
+            <div class="box">
+                <div class="icon1"><i class="fa fa-flask" aria-hidden="true"></i></div>
+                <div class="content"> <h3>Data Science</h3></div>
+            </div>
+        </div>
+    </div>
+    <div class="trending-job">
+        <h3>Recent job</h3>
+        <div class="recent-content">
+                <div class="recent-box">
+
+                </div>
+                <div class="recent-box">
+                    
+                </div>
+                <div class="recent-box">
+                    
+                </div>
+        </div>
+        
+    </div>
+    <div class="social-menu">
+         Contact Us
+         <br>
+         <ul>
+             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+             <li><a href=""><i class="fa fa-google"></i></a></li>
+         </ul>
+    </div>
+
+</body>
+</html>
