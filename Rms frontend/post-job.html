@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+    <title>Job recruitment</title>
+
+</head>
+<script>
+    function openLoginBtn(){
+        document.querySelector('.bg-login').style.display='flex';
+       
+    }
+    function closeLoginBtn(){
+        document.querySelector('.bg-login').style.display='none';
+      
+    }
+
+</script>
+<body>
+
+<div>
+    <div class="bg-login">
+        <div class="bg-login-content">
+              <div class="close" onclick="closeLoginBtn()">
+                  +
+              </div>
+              <img src="img/User.png" alt="icon" class="user">
+              <br>
+              <br>
+              <br>
+              <div class="form-container">
+              <form action=""style="max-width:500px;margin:auto">
+
+                  <div class="input-icons"><i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="text" placeholder="Username" ></div>
+                  <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Password"></div>
+ 
+              </form>
+              </div>
+              <a>Forget password?</a><br><br>
+              <button>Login</button><br><br>
+             <div> <label >Don't have an account?</label><label >Create an account</label></div>
+             
+        </div>
+    </div>
+
+    <header>
+        <img src="img/Logo Job Hunt.png" class="logo" alt="Logo" style="width: 150px; height: auto;">
+    <nav>
+
+    <ul class="nav-link">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="browse.html"> Browse</a></li>
+        <li><a href="post-job.html"> Post Job</a></li>
+        <li><a href="about.html"> About</a></li>
+    </ul>
+    </nav>
+    <button type="button" onclick="openLoginBtn()" >Login</button>
+
+    </header>
+</body>
+</html>
