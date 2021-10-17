@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 
     <title>Job recruitment</title>
+
 </head>
 <script>
     function openLoginBtn(){
@@ -21,63 +22,78 @@
 
 </script>
 <body>
-    <header>
-        <img src="img/Job icon.png" class="logo" alt="Logo" style="width: 200px; height: auto;">
-    <nav>
 
-    <ul class="nav-link">
-        <li><a href="index.html"> Home</a></li>
-        <li><a href=""> Browse</a></li>
-        <li><a href=""> Post Job</a></li>
-        <li><a href=""> About</a></li>
-    </ul>
-    </nav>
-    <button type="button" onclick="openLoginBtn()" >Login</button>
-    </header>
+<div>
     <div class="bg-login">
         <div class="bg-login-content">
               <div class="close" onclick="closeLoginBtn()">
                   +
               </div>
-              <i class="fa fa-user" style="font-size: 70px;"></i>
-              <form action="">
-                  <input type="text" placeholder="Username">
-                  <input type="password" placeholder="Password">
+              <img src="img/User.png" alt="icon" class="user">
+              <br>
+              <br>
+              <br>
+              <div class="form-container">
+              <form action=""style="max-width:500px;margin:auto">
+
+                  <div class="input-icons"><i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="text" placeholder="Username" ></div>
+                  <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Password"></div>
  
               </form>
-              <button>Login</button>
-              <a href="resgister.html"><button type="button">Register</button></a>
+              </div>
+              <a>Forget password?</a><br><br>
+              <button>Login</button><br><br>
+             <div> <label >Don't have an account?</label><label >Create an account</label></div>
+             
         </div>
     </div>
+    <div>
     <div class="search-bar">
-        <h3 style="margin-bottom: 50px;color: #edf0f1;">Find type of job you're looking for</h3>
-        <div class="input-icons">
-        <i class="fa fa-search" aria-hidden="true"></i>
+        <!--<i class="fa fa-search" aria-hidden="true"></i>-->
+        <div class="s-h"><h3> Job In cambodia</h3></div>
+        <div class="s-content">
+            <input type="search" class="s-bar" placeholder="search here">
+        <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
+                
+        <!--! Just in case you need it
         <input type="search" class="s-bar" placeholder="search here">
-        <button>Search</button>
+        <input type="submit" value="Search"> -->
+        </div>
     </div>
     </div>
-
-    <div style="align-items: center;">
-        <h3 style="margin-top: 50px;color: #edf0f1; margin-left: 48%;">Trending</h3>
+       <div class="c-container">
         <div class="container">
+            <div class="heading"> <p> Top Job Catagories </p></div>
             <div class="box">
                 <div class="icon1"><i class="fa fa-desktop" aria-hidden="true"></i></div>
-                <div class="content"> <h3>Web development</h3></div>
+                <div class="content"> <p > Web development </p> </div>
             </div>
             <div class="box">
                 <div class="icon1"><i class="fa fa-code" aria-hidden="true"></i></div>
-                <div class="content"> <h3>Programming</h3></div>
+                <div class="content"> <p style="margin-left:10px; color: black;"> Programming </p></div>
             </div>
             <div class="box">
                 <div class="icon1"><i class="fa fa-flask" aria-hidden="true"></i></div>
-                <div class="content"> <h3>Data Science</h3></div>
+                <div class="content"> <p style="margin-left:18px;"> Data Science </p></div>
             </div>
+            <div class="box">
+            <div class="icon1"><i class="fa fa-calculator" aria-hidden="true"></i></div>
+            <div class="content"><p style="margin-left:20px;">Accounting </p></div></div>
+            <div class="box">
+                <div class="icon1"><i class="fa fa-calculator" aria-hidden="true"></i></div>
+                <div class="content"><p style="margin-left:20px;">Accounting </p></div>
+            </div>
+            <div class="box">
+                <div class="icon1"><i class="fa fa-calculator" aria-hidden="true"></i></div>
+                <div class="content"><p style="margin-left:20px;">Accounting </p></div>
+            </div>
+      
         </div>
-    </div>
-    <div class="trending-job">
-        <h3>Recent job</h3>
+        </div>
+       <div class="d-r-content">
         <div class="recent-content">
+            <h3>Recent job</h3>
+           <div class="a-v"><a href="">View all</a></div>
                 <div class="recent-box">
 
                 </div>
@@ -87,19 +103,33 @@
                 <div class="recent-box">
                     
                 </div>
+                <div class="recent-box">
+                    
+                </div>
+            <div><input type="button" value="Show All"></div>
         </div>
         
-    </div>
+        </div>
     <div class="social-menu">
-         Contact Us
-         <br>
          <ul>
-             <li><a href=""><i class="fa fa-facebook"></i></a></li>
-             <li><a href=""><i class="fa fa-twitter"></i></a></li>
-             <li><a href=""><i class="fa fa-instagram"></i></a></li>
-             <li><a href=""><i class="fa fa-google"></i></a></li>
+           <li>Follow Us</li>
+           <li>Customer Service</li>
          </ul>
     </div>
+</div>
+    <header>
+        <img src="img/Logo Job Hunt.png" class="logo" alt="Logo" style="width: 150px; height: auto;">
+    <nav>
 
+    <ul class="nav-link">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="browse.html"> Browse</a></li>
+        <li><a href="post-job.html"> Post Job</a></li>
+        <li><a href="about.html"> About</a></li>
+    </ul>
+    </nav>
+    <button type="button" onclick="openLoginBtn()" >Login</button>
+
+    </header>
 </body>
 </html>
