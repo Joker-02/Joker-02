@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning Computer science 
 - 💞️ I’m looking to collaborate on any project involved coding
 - 📫 How to reach me ...
-
+- Email:Helpme.hm10@gmail.com ,Facebook:Ah Zax , Telegram:@zax00
 <!---
 Joker-02/Joker-02 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
