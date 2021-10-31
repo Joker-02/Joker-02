@@ -13,6 +13,7 @@ body {
   background-size: cover;
   font-family: "Roboto Slab", serif;
   background: #c4cbce;
+  width: 100%;
 }
 li,
 a,
@@ -79,7 +80,7 @@ button:hover {
   position: relative;
   display: block;
   margin: top 0;
-  width: 1520px;
+  width: 100%;
   height: 600px;
   background-image: url(img/backgroundBook.jpg);
   background-size: cover;
@@ -157,7 +158,7 @@ button:hover {
 .container {
   position: relative;
   width: 1200px;
-  /* width: calc(100% - 200px);*/
+
   height: 300px;
   margin: 10px auto;
   align-items: center;
@@ -177,9 +178,10 @@ button:hover {
   padding: 0 25px;
 }
 .c-container {
+  position: relative;
   background-color: #99c2be;
   padding: 50px 50px;
-  width: 1520px;
+  width: 100%;
   margin: 0 auto;
 }
 .container .heading {
@@ -189,15 +191,15 @@ button:hover {
   padding-top: 20px;
 }
 .container .box {
-  position: inherit;
-
+  position: relative;
+  /*
   width: calc(200px - 30px);
   height: calc(
     200px - 30px
-  ); /*
-    width: calc(100% - 1045px);
-    height: calc(100% - 130px);
-    */
+  ); */
+  width: calc(100% - 1030px);
+  height: calc(100% - 130px);
+
   background: #d4a04e;
   margin: 15px;
   float: left;
@@ -305,6 +307,7 @@ button:hover {
   margin-left: 100px;
 }
 .social-menu {
+  width: 100%;
   position: relative;
   align-items: left;
   text-align: center;
@@ -317,7 +320,6 @@ button:hover {
   background-image: url(img/background3.jpg);
   background-size: cover;
   background-color: rgb(94, 199, 199);
-  width: 1520px;
 }
 .social-menu li {
   list-style: none;
@@ -357,7 +359,7 @@ button:hover {
 }
 .bg-login {
   position: fixed;
-  width: 1520px;
+  width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0, 0.7);
   top: 0;
@@ -475,7 +477,7 @@ button:hover {
 .d-r-content {
   padding: 50px 50px;
   background-color: #d7dfdf;
-  width: 1520px;
+  width: 100%;
 }
 .recent-content input[type="button"] {
   padding: 9px 25px;
@@ -632,7 +634,7 @@ button:hover {
   background-color: #d7dfdf;
   margin-top: 80px;
   color: black;
-  width: 1520px;
+  width: 100%;
   padding: 10px 10px;
   height: 60px;
 }
@@ -658,7 +660,7 @@ button:hover {
   background-size: cover;
   background-color: transparent;
   height: 200px;
-  width: 1520px;
+  width: 100%;
 }
 .social-menu-b li {
   list-style: none;
@@ -669,7 +671,7 @@ button:hover {
 .b-s-container {
   background-color: #0e7b76;
   opacity: 0.8;
-  width: 1520px;
+  width: 100%;
   height: 280px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -688,8 +690,7 @@ button:hover {
 .demo-bg {
   opacity: 0.6;
   position: absolute;
-  left: 260px;
-  top: 140px;
+
   width: 1000px;
   height: auto;
   margin: 0 auto;
@@ -752,7 +753,7 @@ button:hover {
 .d-r-content-b {
   padding: 50px 50px;
   background-color: #d7dfdf;
-  width: 1520px;
+  width: 100%;
 }
 .recent-content-b input[type="button"] {
   padding: 9px 25px;
@@ -814,7 +815,7 @@ button:hover {
 }
 /** Post Job **/
 .poster {
-  width: 1520px;
+  width: 100%;
   height: 390px;
   background-color: #0e7b76;
   position: relative;
@@ -822,12 +823,12 @@ button:hover {
 }
 .poster img {
   position: absolute;
-  left: 200px;
-  top: 30px;
+  width: 100%;
+  height: 100%;
   opacity: 0.6;
 }
 .post-job-container {
-  width: 1520px;
+  width: 100%;
   height: 1000px;
 }
 .post-job-content {
@@ -1042,11 +1043,11 @@ select.arrows:focus {
 /*** Detail-job ***/
 
 .job-detail-content {
-  width: 1520px;
+  width: 100%;
   height: 1400px;
 }
 .job-detail-head-box {
-  width: 1520px;
+  width: 100%;
   height: 250px;
   background-color: #00312f;
   position: absolute;
@@ -1109,6 +1110,7 @@ img.img-company {
   padding: 10px 50px;
   font-weight: 600;
   transition: 0.5s;
+  margin-left: 30px;
 }
 .jd-btn button:hover {
   color: #fff;
@@ -1267,6 +1269,10 @@ img.img-company {
   padding: 9px 40px;
   transition: 0.5s;
 }
+.apply-content .apply-box:nth-child(2) {
+  background-color: #fff;
+  color: #fff;
+}
 .apply-content .apply-box button:hover {
   background-color: #fff;
   color: #00312f;
@@ -1329,8 +1335,8 @@ img.img-company {
   padding: 10px 10px;
 }
 .about-box {
-  width: calc(1100px - 700px);
-  height: calc(1000px - 750px);
+  width: calc(100% - 700px);
+  height: calc(100% - 750px);
 
   text-align: center;
   padding: 10px 10px;

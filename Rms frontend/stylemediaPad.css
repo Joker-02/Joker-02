@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) and (min-width: 501px) {
+@media screen and (max-width: 1030px) and (min-width: 501px) {
   li,
   a,
   button {
@@ -7,6 +7,38 @@
     text-decoration: none;
     color: #edf0f1;
   }
+
+  .search-bar {
+    align-items: left;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: top 0;
+    width: 1520px;
+    height: 600px;
+    background-image: url(img/backgroundBook.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+  .c-container {
+    background-color: #99c2be;
+    padding: 50px 50px;
+    width: 1520px;
+    margin: 0 auto;
+  }
+  .d-r-content {
+    padding: 50px 50px;
+    background-color: #d7dfdf;
+    width: 1520px;
+  }
+  .d-r-content-b {
+    padding: 50px 50px;
+    background-color: #d7dfdf;
+    width: 1520px;
+  }
+
   .s-bar {
     padding: 10px 25px;
     border: none;
@@ -54,7 +86,7 @@
     padding: 9px 14px;
     width: 70px;
     padding-top: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 45px;
     font-size: 40px;
   }
   .bg-login-content .user {
@@ -107,6 +139,7 @@
   }
   .close {
     font-size: 60px;
+    color: #00312f;
   }
   .recent-content input[type="button"] {
     font-size: 20px;
@@ -171,7 +204,11 @@
   }
   .home-browse {
     font-size: 30px;
-    height: 50px;
+    height: 70px;
+    width: 1520px;
+  }
+  .home-content {
+    padding: 10px 10px;
   }
   .b-s-content .s-b-se {
     text-align: center;
@@ -189,9 +226,8 @@
     opacity: 0.8;
   }
   .poster img {
-    position: absolute;
-    left: 200px;
-    top: 30px;
+    position: relative;
+
     opacity: 0.6;
   }
   .post-job-container {
@@ -418,5 +454,131 @@
   .post-job-box form .btn-post:hover {
     background-color: #00312f;
     color: #fff;
+  }
+  .job-detail-content {
+    width: 1520px;
+  }
+  .job-detail-head-box {
+    width: 1520px;
+  }
+  .apply {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: none;
+    z-index: 99999;
+  }
+  .apply-content {
+    position: relative;
+    width: 1100px;
+    height: 700px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 20px 20px;
+  }
+  .apply-content .apply-box {
+    position: relative;
+    width: calc(1100px - 550px);
+    height: 700px;
+    background-image: url(img/apply-back.jpg);
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-position: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /*border-radius:0  20px 20px 0;*/
+  }
+  .apply-content .apply-box:nth-child(2) {
+    background-color: #99c2be;
+    background-image: unset;
+    border-radius: 0 20px 20px 0;
+  }
+  .apply-content .apply-box:nth-child(1) {
+    border-radius: 20px 0 0 20px;
+    background-color: saddlebrown;
+  }
+  .apply-content .apply-box .input-field {
+    padding: 12px 25px;
+    margin: 10px auto;
+    width: 60%;
+    font-size: 30px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+  }
+  .apply-content .apply-box form {
+    margin-top: 50px;
+  }
+  .apply-content .apply-box form .s-l {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .apply-content .apply-box input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+  }
+  .apply-content .apply-box label {
+    font-size: 20px;
+  }
+  .apply-content .apply-box label:nth-child(4) {
+    color: #0e7b76;
+  }
+  .apply-content .apply-box label:nth-child(3) {
+    color: #fff;
+    margin-right: 10px;
+  }
+  .apply-content .apply-box button {
+    padding: 15px 40px;
+  }
+  .apply-content .apply-box button:nth-child(2) {
+    padding-bottom: 14px;
+    padding-top: 20px;
+    font-size: 20px;
+    width: 330px;
+    color: #00312f;
+    background-color: #fff;
+  }
+  .apply-content .apply-box button:hover {
+    background-color: #fff;
+    color: #00312f;
+  }
+  .social-menu {
+    width: 1520px;
+  }
+  /*** about Us ***/
+  .poster h3 {
+    position: relative;
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    margin-top: -400px;
+  }
+  .container-about {
+    width: 1520px;
+    height: 1000px;
+
+    position: relative;
+    color: #00312f;
+  }
+  .content-about {
+    width: 1100px;
+    height: 500px;
+    margin: 10px auto;
+
+    display: flex;
+    position: relative;
   }
 }
