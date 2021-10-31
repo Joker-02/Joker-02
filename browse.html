@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylemediaPad.css">
+    <link rel="stylesheet" type="text/css" href="stylemedia.css">
+    <title>Job recruitment</title>
+
+</head>
+<script>
+    function openLoginBtn(){
+        document.querySelector('.bg-login').style.display='flex';
+       
+    }
+    function closeLoginBtn(){
+        document.querySelector('.bg-login').style.display='none';
+      
+    }
+    function openCreatebtn(){
+        document.querySelector('.sign-up').style.display='flex';
+        document.querySelector('.bg-login').style.display='none';
+       
+    }
+    function closeCreatebtn(){
+        document.querySelector('.sign-up').style.display='none';
+    }
+    function MopenBtn(){
+        document.querySelector('.nav-link').style.display='block';
+        document.getElementById('m-x').style.display='flex';
+        document.getElementById('m-open').style.display='none';
+    }
+    function McloseBtn(){
+        document.querySelector('.nav-link').style.display='none';
+        document.getElementById('m-x').style.display='none';
+        document.getElementById('m-open').style.display='flex';
+    }
+</script>
+<body>
+<div>
+<div>
+    <div class="bg-login">
+        <div class="bg-login-content">
+              <div class="close" onclick="closeLoginBtn()">
+                  +
+              </div>
+              <img src="img/User.png" alt="icon" class="user">
+              <br>
+              <br>
+              <br>
+              <div class="form-container">
+              <form action=""style="max-width:500px;margin:auto">
+
+                  <div class="input-icons"><i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="email" placeholder="Username/Email" ></div>
+                  <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Password"></div>
+ 
+              </form>
+              </div>
+              <a>Forget password?</a><br><br>
+              <button>Login</button><br><br>
+             <div> <label >Don't have an account?</label><label class="Create" onclick="openCreatebtn()" >Create an account</label></div>
+             
+        </div>
+    </div>
+    <div>
+    <div class="sign-up">
+        <div class="sign-up-content">
+            
+                <div class="sign-box">
+
+                </div>
+                <div class="sign-box">
+                    <div class="close" onclick="closeCreatebtn()">
+                        +
+                    </div>        
+                        <form action="">
+                            <label class="s-l">Sign Up</label><br><br>
+                            <div class="input-icons"><i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="text" placeholder="Username" ></div>
+                            <div class="input-icons"><i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Phone Number"></div>
+                            <div class="input-icons"><i class="fa fa-envelope-o fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="email" placeholder="Email" ></div>
+                            <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Password"></div>
+                            <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Confirm Password"></div>
+                      
+                        </form>
+                        <label>
+                            <input type="checkbox" /> I read and agree to
+                          </label>
+                          <label >Term & Condition</label>
+                          <br><br>
+                        <button>Create Account</button>
+                </div>
+        </div>
+    </div>
+  <div class="Home-browse">
+        <div class="browse-content"><i class="fa fa-home fa-lg fa-fw"></i>Home / All job in cambodia</div>
+  </div>
+  <div class="b-s-container"> 
+   
+    <div class="b-s-content">
+        <img src="img/browse-post.png" class ="demo-bg"alt=""> 
+          <div class="b-s-box">  
+           <select name="fa" id="fa" class="fa" title="Catagories">
+            <option value="">&#xf009;
+                Catagories
+               </option>
+               <option value="Accountant">
+               
+                Accountant
+               </option>
+        
+               <option value="Accountant">
+               
+                Accountant
+               </option>
+        
+               <option value="Accountant">
+               
+                Accountant
+               </option>
+               <option value="visit"><i class="fa fa-home"></i> Home</option>
+               <option data-icon="glyphicon glyphicon-eye-open" data-subtext="petrification">Eye of Medusa</option>
+            </select>
+     </div>
+    
+     <div class="b-s-box">
+         <form action="">
+            <div class="Icon-inside">
+                <input type="text" placeholder="Search here">
+                <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
+              </div>
+    </form>             
+      </div>
+      <div class="b-s-box">
+          <select class="fa">
+            <option value="">&#xf124; Location</option>
+        </select>
+        
+   </div>
+        <div class="b-s-box">
+            <input type="submit" class="s-b-se" value="Search">
+        </div>
+    </div>
+    
+  </div>
+  <div class="d-r-content-b">
+    <div class="recent-content-b">
+        <h3>Count Result in a Current Date</h3>
+       <div class="r-sort"><select name="sort" id="sort"><option value="">Sort</option></select></div>
+            <div class="recent-box-b" onclick="location.href='detail-job.html'">
+               <i class="fa fa-calculator fa-5x" aria-hidden="true"></i>
+            <div class="box-content" >
+                <h3> ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់</h3>
+                <div ><a>Username</a> <a>Location</a> <a>Active</a></div>
+                <p>ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់
+                    ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់</p>
+            </div>
+            </div>
+            <div class="recent-box-b" onclick="location.href='detail-job.html'">
+                <i class="fa fa-calculator fa-5x" aria-hidden="true"></i>
+                <div class="box-content">
+                    <h3> ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់</h3>
+                    <div ><a>Username</a> <a>Location</a> <a>Active</a></div>
+                    <p>ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់
+                     ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់</p>
+                </div>
+            </div>
+            <div class="recent-box-b" onclick="location.href='detail-job.html'">
+                <i class="fa fa-calculator fa-5x" aria-hidden="true"></i>
+                <div class="box-content">
+                    <h3> ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់</h3>
+                    <div ><a>Username</a> <a>Location</a> <a>Active</a></div>
+                    <p>ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់
+                        ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់</p>
+                </div>
+            </div>
+            <div class="recent-box-b" onclick="location.href='detail-job.html'">
+                <i class="fa fa-calculator fa-5x" aria-hidden="true"></i>
+                <div class="box-content">
+                    <h3> ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់</h3>
+                    <div ><a>Username</a> <a>Location</a> <a>Active</a></div>
+                    <p>ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់
+                        ជ្រើសរើសបុគ្គលិកផ្នែកខលនិងរៀបអីវ៉ាន់</p>
+                </div>
+            </div>
+        <div class="button-n-b">
+        <input type="button" value="Previous">
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="6">
+        <input type="button" value="7">
+        <input type="button" value="8">
+        <input type="button" value="Next"></div>
+    </div>
+    
+    </div>
+    <div class="social-menu"id="soc">
+         <ul>
+           <li>Follow Us</li>
+           <li>Customer Service</li>
+         </ul>
+    </div>
+</div>
+    <header>
+      
+        <img src="img/Logo Job Hunt.png" class="logo" alt="Logo">
+    <nav>
+        <i class="fa fa-bars" id="m-open" onclick="MopenBtn()"></i>
+        <i class="fa fa-times " id="m-x" onclick="McloseBtn()"></i>
+    <ul class="nav-link">
+        
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="browse.html"> Browse</a></li>
+        <li><a href="post-job.html"> Post Job</a></li>
+        <li><a href="about.html"> About</a></li>
+        <button type="button" onclick="openLoginBtn()" >Login</button>
+
+    </ul>
+    
+    </nav>
+   
+
+    </header>
+</div>
+</body>
+</html>

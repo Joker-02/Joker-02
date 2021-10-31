@@ -1,0 +1,268 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylemediaPad.css">
+    <link rel="stylesheet" type="text/css" href="stylemedia.css">
+    <title>Job recruitment</title>
+
+</head>
+<script>
+    function openLoginBtn(){
+        document.querySelector('.bg-login').style.display='flex';
+       
+    }
+    function closeLoginBtn(){
+        document.querySelector('.bg-login').style.display='none';
+      
+    }
+    function openCreatebtn(){
+        document.querySelector('.sign-up').style.display='flex';
+        document.querySelector('.bg-login').style.display='none';
+       
+    }
+    function closeCreatebtn(){
+        document.querySelector('.sign-up').style.display='none';
+    }
+    function MopenBtn(){
+        document.querySelector('.nav-link').style.display='block';
+        document.getElementById('m-x').style.display='flex';
+        document.getElementById('m-open').style.display='none';
+    }
+    function McloseBtn(){
+        document.querySelector('.nav-link').style.display='none';
+        document.getElementById('m-x').style.display='none';
+        document.getElementById('m-open').style.display='flex';
+    }
+    function  btnopenphone(){
+                              
+       document.querySelector(".phone2").style.display='inline-block';
+       document.querySelector(".close3").style.display='none';
+       document.querySelector(".fa-times").style.display='inline-block';
+        }
+    function close2(){
+                               
+       document.querySelector(".phone2").style.display='none';
+       document.querySelector(".close3").style.display='inline-block';
+       document.querySelector(".fa-times").style.display='none';
+    }
+</script>
+<body>
+<div>
+<div>
+    <div class="bg-login">
+        <div class="bg-login-content">
+              <div class="close" onclick="closeLoginBtn()">
+                  +
+              </div>
+              <img src="img/User.png" alt="icon" class="user">
+              <br>
+              <br>
+              <br>
+              <div class="form-container">
+              <form action=""style="max-width:500px;margin:auto">
+
+                  <div class="input-icons"><i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="email" placeholder="Username/Email" ></div>
+                  <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Password"></div>
+ 
+              </form>
+              </div>
+              <a>Forget password?</a><br><br>
+              <button>Login</button><br><br>
+             <div> <label >Don't have an account?</label><label class="Create" onclick="openCreatebtn()" >Create an account</label></div>
+             
+        </div>
+    </div>
+    <div>
+    <div class="sign-up">
+        <div class="sign-up-content">
+            
+                <div class="sign-box">
+
+                </div>
+                <div class="sign-box">
+                    <div class="close" onclick="closeCreatebtn()">
+                        +
+                    </div>        
+                        <form action="">
+                            <label class="s-l">Sign Up</label><br><br>
+                            <div class="input-icons"><i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="text" placeholder="Username" ></div>
+                            <div class="input-icons"><i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Phone Number"></div>
+                            <div class="input-icons"><i class="fa fa-envelope-o fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="email" placeholder="Email" ></div>
+                            <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Password"></div>
+                            <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Confirm Password"></div>
+                      
+                        </form>
+                        <label>
+                            <input type="checkbox" /> I read and agree to
+                          </label>
+                          <label >Term & Condition</label>
+                          <br><br>
+                        <button>Create Account</button>
+                </div>
+        </div>
+    </div>
+    <div class="Home-browse">
+        <div class="browse-content"><i class="fa fa-home fa-lg fa-fw"></i>Home / Post Job</div>
+  </div>
+    <div class="poster">
+        <img src="img/post-job.png" alt="logo">
+    </div>
+    <div class="post-job-container">
+    
+        <div class="post-job-content">
+         
+            <div class="post-job-box">
+                <div class="post-job-title">Post Job</div>
+                <form action="">
+                    <div class="input-icons"><i class="fa fa-th-large fa-lg fa-fw" aria-hidden="true"></i><select name="cata" id="cata">
+                        <option value="">Catagories</option>
+                    </select></div>
+                    <div class="input-icons">
+                        <div class="box-icon">
+                        <i class="fa fa-database fa-lg fa-fw" aria-hidden="true"></i>
+                        <input type="text" class="input-field" placeholder="Job title">
+                    </div>
+                    <div class="box-icon">
+                        <i class="fa fa-database fa-lg fa-fw" aria-hidden="true"></i>
+                        <select name="job" id="job" style="width: 250px; margin-left: -5px;">
+                            <option value="">Job Type</option>
+                        </select></div>
+                    </div>
+                        <div class="input-icons">
+                            <div class="box-icon"> 
+                            <i class="fa fa-suitcase fa-lg fa-fw" aria-hidden="true"></i>
+                            <select class="select2">
+                                <option value="">Experience</option>
+                            </select>
+                            </div>
+                            <div class="box-icon">
+                            <i class="fa fa-usd fa-lg fa-fw" aria-hidden="true"></i>
+                            <select class="arrows" style="width: 250px; margin-left: -5px;">
+                                <option value="">Salary</option>
+                            </select>
+                        </div>
+                    </div>
+                            <div class="input-icons">
+                                <div class="box-icon">
+                                <i class="fa fa-building fa-lg fa-fw" aria-hidden="true"></i>
+                                <input type="text" class="input-com" placeholder="Company">
+                            </div></div>
+                            <div class="input-icons">
+                                <div class="box-icon">
+                                <i class="fa fa-envelope-o fa-lg fa-fw" aria-hidden="true"></i>
+                                <input type="text" class="input-field" id="Email-in" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="input-icons">
+                                <div class="phone1">
+                                <i class="fa fa-phone fa-lg fa-fw" id="phone1" aria-hidden="true"></i>
+                                <input type="text" class="input-field"  placeholder="Phone Number">
+                                </div>
+                                <div class="phone2">
+                                <i class="fa fa-phone fa-lg fa-fw" id="phone2" aria-hidden="true"></i>
+                                <input type="text" class="input-field"  name="phone2" placeholder="Phone Number">
+                                
+                            </div>
+                            <label class="close2" onclick="close2()">
+                                <i class="fa fa-times"></i>
+                            </label>
+                                <label onclick="btnopenphone()" class="close3" id="close3" style="padding: 5px; "> 
+                                    +
+                                </label>
+                            </div>
+
+                            <div class="input-icons">
+                                <div>
+                                <i class="fa fa-map-marker fa-lg fa-fw" aria-hidden="true"></i>
+                                <select class="city">
+                                <option value="">City /Provine</option>
+                            </select>
+                            </div>
+                            </div>
+                            <div class="input-icons">
+                                <div><i class="fa fa-compass fa-lg fa-fw" aria-hidden="true"></i>
+                            <input type="text" class="input-city" placeholder="Detail Location">   
+                            </div>
+                        </div>
+                        <div class="input-icons">
+                            <div>
+                            <i class="fa fa-list-ol fa-lg fa-fw" aria-hidden="true"></i>
+                            <input type="text" class="input-field" id="re-in" placeholder="Requirement">
+                            </div>
+                        </div>
+                        <div class="upload-btn-wrapper">
+                            <div class="input-icons">
+                                <div><i class="fa fa-upload fa-lg fa-fw" aria-hidden="true"></i>
+                            <button class="btn">Upload a file</button>
+                            <input type="file" name="myfile" />
+                          </div></div></div>                      
+                          
+                        <div class="btn-sumbit-post">
+                            <button class="btn-post">Submit</button>
+                        </div>
+                        
+                 <!---
+                   
+                        
+                          
+                            <div class="input-icons">
+                                <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+                                <input type="text" class="input-field"  placeholder="Phone Number">
+                                <div class="input-phone2">
+                                <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+                                <input type="text" class="input-field" id='phone2' name="phone2" placeholder="Phone Number">
+                                </div>
+                                <label onclick="btnopenphone()" class="close3"> 
+                                +
+                            </label>
+                            <label class="close2" onclick="close2()">
+                                <i class="fa fa-times"></i>
+                            </label>
+                            </div>
+                          
+                            <div class="input-icons">
+                                <i class="fa fa-file-text fa-lg fa-fw" aria-hidden="true"></i>
+                            <input type="text" class="input-city" placeholder="Description">   
+                            </div>
+                           
+                           
+                -->       </form>   
+            </div>
+        </div>
+    
+    </div>
+    <div class="social-menu">
+         <ul>
+           <li>Follow Us</li>
+           <li>Customer Service</li>
+         </ul>
+    </div>
+</div>
+    <header>
+      
+        <img src="img/Logo Job Hunt.png" class="logo" alt="Logo">
+    <nav>
+        <i class="fa fa-bars" id="m-open" onclick="MopenBtn()"></i>
+        <i class="fa fa-times " id="m-x" onclick="McloseBtn()"></i>
+    <ul class="nav-link">
+        
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="browse.html"> Browse</a></li>
+        <li><a href="post-job.html"> Post Job</a></li>
+        <li><a href="about.html"> About</a></li>
+        <button type="button" onclick="openLoginBtn()" >Login</button>
+
+    </ul>
+    
+    </nav>
+   
+
+    </header>
+</div>
+</body>
+</html>

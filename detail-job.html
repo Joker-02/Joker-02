@@ -1,0 +1,234 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylemediaPad.css">
+    <link rel="stylesheet" type="text/css" href="stylemedia.css">
+    <title>Job recruitment</title>
+
+</head>
+<script>
+    function openLoginBtn(){
+        document.querySelector('.bg-login').style.display='flex';
+       
+    }
+    function closeLoginBtn(){
+        document.querySelector('.bg-login').style.display='none';
+      
+    }
+    function openCreatebtn(){
+        document.querySelector('.sign-up').style.display='flex';
+        document.querySelector('.bg-login').style.display='none';
+       
+    }
+    function closeCreatebtn(){
+        document.querySelector('.sign-up').style.display='none';
+    }
+    function openApplybtn(){
+        document.querySelector('.apply').style.display='flex';
+    }
+    function closeApplybtn(){
+        document.querySelector('.apply').style.display='none';
+    }
+    function MopenBtn(){
+        document.querySelector('.nav-link').style.display='block';
+        document.getElementById('m-x').style.display='flex';
+        document.getElementById('m-open').style.display='none';
+    }
+    function McloseBtn(){
+        document.querySelector('.nav-link').style.display='none';
+        document.getElementById('m-x').style.display='none';
+        document.getElementById('m-open').style.display='flex';
+    }
+</script>
+<body>
+<div>
+<div>
+    <div class="bg-login">
+        <div class="bg-login-content">
+              <div class="close" onclick="closeLoginBtn()">
+                  +
+              </div>
+              <img src="img/User.png" alt="icon" class="user">
+              <br>
+              <br>
+              <br>
+              <div class="form-container">
+              <form action=""style="max-width:500px;margin:auto">
+
+                  <div class="input-icons"><i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="email" placeholder="Username/Email" ></div>
+                  <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Password"></div>
+ 
+              </form>
+              </div>
+              <a>Forget password?</a><br><br>
+              <button>Login</button><br><br>
+             <div> <label >Don't have an account?</label><label class="Create" onclick="openCreatebtn()" >Create an account</label></div>
+             
+        </div>
+    </div>
+    <div>
+    <div class="sign-up">
+        <div class="sign-up-content">
+            
+                <div class="sign-box">
+
+                </div>
+                <div class="sign-box">
+                    <div class="close" onclick="closeCreatebtn()">
+                        +
+                    </div>        
+                        <form action="">
+                            <label class="s-l">Sign Up</label><br><br>
+                            <div class="input-icons"><i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="text" placeholder="Username" ></div>
+                            <div class="input-icons"><i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Phone Number"></div>
+                            <div class="input-icons"><i class="fa fa-envelope-o fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="email" placeholder="Email" ></div>
+                            <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Password"></div>
+                            <div class="input-icons"><i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Confirm Password"></div>
+                      
+                        </form>
+                        <label>
+                            <input type="checkbox" /> I read and agree to
+                          </label>
+                          <label >Term & Condition</label>
+                          <br><br>
+                        <button>Create Account</button>
+                </div>
+        </div>
+    </div>
+    <div class="apply">
+        <div class="apply-content">
+            <div class="apply-box">
+
+            </div>
+            <div class="apply-box">
+                <div class="close" onclick="closeApplybtn()">
+                    +
+                </div>
+                <form action="">
+                    <label class="s-l">Apply For these Job</label><br><br>
+                    <div class="input-icons"><i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="text" placeholder="Name" ></div>
+                    <div class="input-icons"><i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i><input  class="input-field" type="password" placeholder="Phone Number"></div>
+                    <div class="input-icons"><i class="fa fa-envelope-o fa-lg fa-fw" aria-hidden="true"></i><input class="input-field" type="email" placeholder="Email" ></div>
+                   <br>
+                    <div class="upload-btn-wrapper-a">
+                        <div class="input-icons">
+                            <div><i class="fa fa-upload fa-lg fa-fw" aria-hidden="true"></i>
+                        <button class="btn-a">Upload a file</button>
+                        <input type="file" name="myfile" />
+                      </div></div></div> 
+                </form>
+                <label>
+                    <input type="checkbox" /> I read and agree to
+                  </label>
+                  <label >Term & Condition</label>
+                  <br><br>
+                <button>Apply Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="Home-browse">
+        <div class="browse-content"><i class="fa fa-home fa-lg fa-fw"></i>Home / Job Detail</div>
+  </div>
+<div class="job-detail">
+        <div class="job-detail-container">
+            <div class="job-detail-content">
+                    <div class="job-detail-head-box">
+                            <div class="jd-content">
+                                <img src="img/company-logo.png" alt="" class="img-company">
+                                <div class="jd-content-text">
+                                <h2>Company Name</h2>
+                                <h3>Job Title</h3>
+                                <h3>Short Location</h3>
+                                <div class="jd-btn">
+                                    <button onclick="openApplybtn()">Apply</button>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="jd-content">
+                                <h2 style="color: #00312f;">Job Details</h2>
+                                <div class="jd-des-text">
+                                    <h3>SALARY</h3>
+                                    <div class="des-text">
+                                        <h3>$40000 - $46000/Year</h3>
+                                    </div>
+                                </div>
+                                 <div class="jd-des-text">
+                                    <h3>JOB TYPE</h3>
+                                    <div class="des-text">
+                                        <h3>Full-Time</h3>
+                                
+                                    </div> 
+                                </div>
+                                <div class="jd-des-text">
+                                    <h3>EXPERIENCE</h3>
+                                    <div class="des-text">
+                                        <h3>2 Years</h3>
+                                
+                                    </div> 
+                                </div>
+                                <div class="jd-des-text">
+                                    <h3>POSTED</h3>
+                                    <div class="des-text">
+                                        <h3>2 Days Ago</h3>
+                                
+                                    </div> 
+                                </div>
+                                <div class="jd-des-text">
+                                    <h3>Description</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                </div>
+                                <div class="jd-des-text">
+                                    <h3>Requirement</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+                                </div>
+                                <div class="jd-des-text">
+                                    <h3>Company Profile</h3>
+                                    <div class="cp-fill"><label for="">Company</label><label for="">:</label><p>Company Name</p></div>
+                                    <div class="cp-fill"><label for="">Email</label><label for="">:</label><p>Company@example</p></div>
+                                    <div class="cp-fill"><label for="">Phone Number</label><label for="">:</label><p>123Number</p></div>
+                                    <div class="cp-fill"><label for="">Location</label><label for="">:</label><p>Detail Location</p></div>
+                             
+                                </div>
+                            </div>
+                      </div>
+            </div>
+</div>
+    <div class="social-menu">
+         <ul>
+           <li>Follow Us</li>
+           <li>Customer Service</li>
+         </ul>
+    </div>
+</div>
+    <header>
+      
+        <img src="img/Logo Job Hunt.png" class="logo" alt="Logo">
+    <nav>
+        <i class="fa fa-bars" id="m-open" onclick="MopenBtn()"></i>
+        <i class="fa fa-times " id="m-x" onclick="McloseBtn()"></i>
+    <ul class="nav-link">
+        
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="browse.html"> Browse</a></li>
+        <li><a href="post-job.html"> Post Job</a></li>
+        <li><a href="about.html"> About</a></li>
+        <button type="button" onclick="openLoginBtn()" >Login</button>
+
+    </ul>
+    
+    </nav>
+   
+
+    </header>
+</div>
+</body>
+</html>
